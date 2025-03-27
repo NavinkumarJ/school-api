@@ -2,7 +2,7 @@ const db = require("../config/db");
 
 const SchoolModel = {
     addSchool: (name, address, latitude, longitude, callback) => {
-        const query = "INSERT INTO schools (name, address, latitude, longitude) VALUES (?, ?, ?, ?)";
+        const query = "INSERT INTO schools (name, address, latitude, longitude, created_at) VALUES (?, ?, ?, ?, NOW())";
         db.query(query, [name, address, latitude, longitude], callback);
     },
 
