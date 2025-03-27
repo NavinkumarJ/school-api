@@ -3,7 +3,8 @@
     "body-parser": "^2.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mysql2": "^3.14.0"
+    "mysql2": "^3.14.0",
+    "railway": "^2.0.17"
   },
   "name": "school-apis",
   "version": "1.0.0",
